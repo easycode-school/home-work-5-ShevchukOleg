@@ -1,0 +1,28 @@
+<app-form (createdNewTodo) = "addNewTodo($event)"></app-form>
+<div class="todos-table mt-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-8 mx-auto">
+              <table class="table table-bordered">
+                  <thead>
+                      <tr>
+                          <td>Title</td>
+                          <td>Text</td>
+                          <td>Controls</td>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor = 'let item of todos'>
+                          <td>{{item.title}}</td>
+                          <td>{{item.text}}</td>
+                          <td></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <!-- /.col-8 mx-auto -->
+      </div>
+      <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
